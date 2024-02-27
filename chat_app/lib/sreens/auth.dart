@@ -8,7 +8,22 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
+  final _formKey = GlobalKey<FormState>();
   var _isLogin = true;
+  var _enteredEmail = '';
+  var _enteredPassword = '';
+
+  void _submit() {
+
+    final isValid = _formKey.currentState!.validate();
+    if (!isValid) {
+      _formKey.currentState!.save();
+
+      print(_enteredEmail);
+      print(_enteredPassword);
+    }
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +44,7 @@ class _AuthScreenState extends State<AuthScreen> {
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Form(
+                      key: _formKey,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -46,6 +62,9 @@ class _AuthScreenState extends State<AuthScreen> {
                               }
                               return null;
                             },
+                            onSaved: (value) {
+                              _enteredEmail = value!;
+                            },
                           ),
                           TextFormField(
                             decoration:
@@ -57,12 +76,16 @@ class _AuthScreenState extends State<AuthScreen> {
                               }
                               return null;
                             },
+                            onSaved: (value) {
+                              _enteredPassword = value!;
+                            },
                           ),
+                          
                           const SizedBox(
                             height: 12,
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: _submit,
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Theme.of(context)
                                   .colorScheme
