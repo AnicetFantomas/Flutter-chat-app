@@ -8,6 +8,8 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
+  var _isLogin = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,22 +38,47 @@ class _AuthScreenState extends State<AuthScreen> {
                             keyboardType: TextInputType.emailAddress,
                             autocorrect: false,
                             textCapitalization: TextCapitalization.none,
+                            validator: (value) {
+                              if (value == null ||
+                                  value.trim().isEmpty ||
+                                  !value.contains('@')) {
+                                return 'Please enter a valid email address';
+                              }
+                              return null;
+                            },
                           ),
                           TextFormField(
                             decoration:
                                 const InputDecoration(labelText: 'Password'),
                             obscureText: true,
+                            validator: (value) {
+                              if (value == null || value.trim().length < 6) {
+                                return 'Password must be at least 6 characters';
+                              }
+                              return null;
+                            },
                           ),
                           const SizedBox(
                             height: 12,
                           ),
                           ElevatedButton(
                             onPressed: () {},
-                            child: const Text('Sigup'),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Theme.of(context)
+                                  .colorScheme
+                                  .primaryContainer,
+                            ),
+                            child: Text(_isLogin ? 'Login' : 'Signup'),
                           ),
                           TextButton(
-                            onPressed: () {},
-                            child: const Text('Already have an account?'),
+                            onPressed: () {
+                              setState(() {
+                                _isLogin = !_isLogin;
+                              });
+                            },
+                            child: Text(_isLogin
+                                ? 'Create new account'
+                                : 'I already have an account'),
                           )
                         ],
                       ),
