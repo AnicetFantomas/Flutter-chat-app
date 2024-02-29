@@ -1,0 +1,1 @@
+ /home/anicetfantomas/Desktop/Flutter\ learning/Flutter-chat-app/.dart_tool/flutter_build/dfe1eb6a19a761d6f8f549fd6a9b9148/native_assets.yaml: 

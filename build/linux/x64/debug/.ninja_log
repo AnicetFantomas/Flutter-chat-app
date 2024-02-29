@@ -1,0 +1,28 @@
+# ninja log v5
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/libflutter_linux_gtk.so	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_engine.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_method_call.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_method_response.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_value.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/fl_view.h	5c997b7ec9c79394
+0	9352	0	/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/linux/flutter/ephemeral/flutter_linux/flutter_linux.h	5c997b7ec9c79394
+0	9352	0	flutter/_phony_	5c997b7ec9c79394
+9363	10852	1709221454325074645	CMakeFiles/chat_app.dir/flutter/generated_plugin_registrant.cc.o	a93cbbe452ce7e2f
+9353	10898	1709221454369073702	CMakeFiles/chat_app.dir/main.cc.o	e374522734d440bb
+9362	10963	1709221454437072244	CMakeFiles/chat_app.dir/my_application.cc.o	cb2d6d4bedf2636
+10963	11332	1709221454805064355	intermediates_do_not_run/chat_app	c990cf220b815df0
+11332	11496	0	CMakeFiles/install.util	103b01431a9f9dcb
