@@ -1,4 +1,4 @@
-#Tue Mar 05 19:18:10 CAT 2024
+#Wed Mar 13 19:14:29 CAT 2024
 base.0=/home/anicetfantomas/Desktop/Flutter learning/Flutter-chat-app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
