@@ -20,6 +20,7 @@ class _AuthScreenState extends State<AuthScreen> {
   var _enteredEmail = '';
   var _enteredPassword = '';
   File? _selectedImage;
+  var _isAuthenticating = false;
 
   Object? get userCredential => null;
 
@@ -32,6 +33,9 @@ class _AuthScreenState extends State<AuthScreen> {
 
     _formKey.currentState!.save();
     try {
+      setState(() {
+        _isAuthenticating = true;
+      });
       if (_isLogin) {
         // log in
         final userCredentials = await _firebase.signInWithEmailAndPassword(
@@ -43,14 +47,14 @@ class _AuthScreenState extends State<AuthScreen> {
         final userCredentials = await _firebase.createUserWithEmailAndPassword(
             email: _enteredEmail, password: _enteredPassword);
         // print(userCredentials);
-      final storageRef =  FirebaseStorage.instance
+        final storageRef = FirebaseStorage.instance
             .ref()
             .child('user_images')
             .child('${userCredentials.user!.uid}.jpg');
-        
-          await storageRef.putFile(_selectedImage!);
-          final imageUrl = await storageRef.getDownloadURL();
-          print(imageUrl); 
+
+        await storageRef.putFile(_selectedImage!);
+        final imageUrl = await storageRef.getDownloadURL();
+        print(imageUrl);
       }
     } on FirebaseAuthException catch (error) {
       if (error.code == 'email-already-in-use') {}
@@ -58,6 +62,10 @@ class _AuthScreenState extends State<AuthScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(error.message ?? 'Authentication failed')),
       );
+    } finally {
+      setState(() {
+        _isAuthenticating = false;
+      });
     }
   }
 
@@ -125,6 +133,9 @@ class _AuthScreenState extends State<AuthScreen> {
                           const SizedBox(
                             height: 12,
                           ),
+                          if (_isAuthenticating)
+                            const CircularProgressIndicator(),
+                          if (!_isAuthenticating)
                           ElevatedButton(
                             onPressed: _submit,
                             style: ElevatedButton.styleFrom(
@@ -134,6 +145,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             child: Text(_isLogin ? 'Login' : 'Signup'),
                           ),
+                          if (!_isAuthenticating)
                           TextButton(
                             onPressed: () {
                               setState(() {
