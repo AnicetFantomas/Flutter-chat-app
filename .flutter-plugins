@@ -1,4 +1,6 @@
 # This is a generated file; do not edit or check into version control.
+cloud_firestore=/home/anicetfantomas/.pub-cache/hosted/pub.dev/cloud_firestore-4.15.9/
+cloud_firestore_web=/home/anicetfantomas/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.10.9/
 file_selector_linux=/home/anicetfantomas/.pub-cache/hosted/pub.dev/file_selector_linux-0.9.2+1/
 file_selector_macos=/home/anicetfantomas/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+3/
 file_selector_windows=/home/anicetfantomas/.pub-cache/hosted/pub.dev/file_selector_windows-0.9.3+1/
@@ -6,6 +8,8 @@ firebase_auth=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_auth-4.17.
 firebase_auth_web=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_auth_web-5.10.0/
 firebase_core=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_core-2.27.1/
 firebase_core_web=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_core_web-2.12.0/
+firebase_database=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_database-10.4.10/
+firebase_database_web=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_database_web-0.2.3+26/
 firebase_storage=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_storage-11.6.10/
 firebase_storage_web=/home/anicetfantomas/.pub-cache/hosted/pub.dev/firebase_storage_web-3.8.0/
 flutter_plugin_android_lifecycle=/home/anicetfantomas/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.17/

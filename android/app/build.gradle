@@ -49,6 +49,10 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        
+
+        // added for the firestore
+        multiDexEnabled true
     }
 
     buildTypes {
